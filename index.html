@@ -2,10 +2,60 @@
 <html>
     <head>
         <title>
-            Test
+            Akshat's Webpage
         </title>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <style>
+            body {
+                font-family: 'Product Sans';
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .container > div {
+                background-color: forestgreen;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                height: 300px;
+                width: 200px;
+            }
+            .grid {
+                background-color: firebrick;
+                display: grid;
+                padding: 10px;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                grid-template-columns: auto auto auto; 
+            }
+            .grid-item {
+                background-color: white;
+                font-size: 20px;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        Hi Knotty!
+        <div class="grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+        </div>
+        <div class="container">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+            <div>F</div>
+            <div>G</div>
+            <div>H</div>
+        </div>
     </body>
 </html>
