@@ -1,0 +1,32 @@
+.success, .warning, .error {
+  font-family: monospace;
+  font-size: 18px;
+  border: 1px round black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.success {
+  background-color: lightseagreen;
+}
+
+.warning {
+  background-color: orange;
+}
+
+.error {
+  background-color: salmon;
+}
+
+div {
+  font-size: 18px;
+}
+
+div p {
+  color: green;
+}
+
+div li {
+  color: greenyellow;
+}
+/*# sourceMappingURL=variables.css.map */
