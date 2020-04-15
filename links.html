@@ -2,20 +2,50 @@
 <html>
     <head>
         <title>Akshat's Webpage</title>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <style>
+            p::selection {
+                background-color: firebrick;
+            }
+            @media print {
+                .screen-only {
+                    display: none;
+                }
+            }
+            @media (min-width: 600px) {
+                body {
+                    background-color: firebrick;
+                }
+                h1::before {
+                    content: "Welcome to my webpage!"
+                }
+            }
+            @media (max-width: 599px) {
+                body {
+                    background-color: forestgreen;
+                }
+                h1::before {
+                    content: "Welcome!"
+                }
+            }
+        </style>
     </head>
     <body>
+        <h1></h1>
         <a href="index.html">Click Here!</a>
-        <h2>Table of Contents</h2>
-        <ul>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section2">Section 2</a></li>
-            <li><a href="#section3">Section 3</a></li>
-        </ul>
+        <div class="screen-only">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+            </ul>
+        </div>
         <h2 id="section1">Section 1</h2>
-        Hi!
+        <p>Hi! Hellloooooooooooo.</p>
         <h2 id="section2">Section 2</h2>
-        Hi!
+        <p>Hello again!</p>
         <h2 id="section3">Section 3</h2>
-        Hi!
+        <p>Another Hello!</p>
     </body>
 </html>
